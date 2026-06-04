@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tanfana 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   id: text_1_tanfana
-  currentLine: 0
+  currentLine: 3
   lines:
   - character: Player
     text: Are you Tanfana?
@@ -23,4 +23,13 @@ MonoBehaviour:
     text: Used to?
   - character: Tanfana
     text: "It\u2019s been a long time since anyone asked."
+  - character: Tanfana
+    text: 'Can You find The temple people used to worship me? '
   conditions: []
+  choices:
+  - text: Accept Quest
+    nextNode: {fileID: 11400000, guid: 8bf96e756a27c0e4d94208184498ac00, type: 2}
+    conditions: []
+  - text: Next Dialogue
+    nextNode: {fileID: 11400000, guid: aa71ad72b3f3c9d4ca0316912bd47c3f, type: 2}
+    conditions: []

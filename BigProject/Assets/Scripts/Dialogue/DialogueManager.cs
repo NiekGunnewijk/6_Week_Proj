@@ -8,11 +8,9 @@ namespace Dialogue
     {
         public static DialogueManager Instance { get; private set; }
         
-        [SerializeField] 
-        private PlayerInput _playerInput;
+        [SerializeField] private PlayerInput _playerInput;
         private DialogueNode _currentNode;
-        [SerializeField]
-        private DialogueUI _ui;
+        [SerializeField] private DialogueUI _ui;
         
         private void OnEnable()
         {
@@ -39,6 +37,7 @@ namespace Dialogue
                 dialogueNode.StartDialogue();
                 _currentNode = dialogueNode;
                 _ui.DisplayDialogue(_currentNode);
+                _ui.EnableUI();
             }
         }
 
@@ -62,7 +61,7 @@ namespace Dialogue
                 }
                 else
                 {
-                    Debug.LogError("No choice found");
+                    EventBus<DialogueEndEvent>.Publish(new DialogueEndEvent());
                 }
             }
             else

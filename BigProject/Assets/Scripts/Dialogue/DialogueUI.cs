@@ -1,16 +1,29 @@
+using System;
 using Dialogue;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class DialogueUI : MonoBehaviour
 {
+    [SerializeField] private GameObject _dialogueUI;
     public TextMeshProUGUI SpeakerText;
     public TextMeshProUGUI DialogueText;
     
     [SerializeField] private Transform choicesContainer;
     [SerializeField] private Button choiceButtonPrefab;
-    
+
+    private void OnEnable()
+    {
+        EventBus<DialogueEndEvent>.OnEvent += DisableUI;
+    }
+
+    private void OnDisable()
+    {
+        EventBus<DialogueEndEvent>.OnEvent -= DisableUI;
+    }
+
     public void DisplayDialogue(DialogueNode currentDialogueNode)
     {
         SpeakerText.text = currentDialogueNode.lines[currentDialogueNode.currentLine].character;
@@ -19,6 +32,7 @@ public class DialogueUI : MonoBehaviour
     
     public void ShowChoices(DialogueNode currentNode)
     {
+        DestroyButtons();
         foreach(DialogueChoice choice in currentNode.choices)
         {
             CreateButton(choice);
@@ -48,5 +62,14 @@ public class DialogueUI : MonoBehaviour
         {
             Destroy(choicesContainer.GetChild(i).gameObject);
         }
+    }
+
+    public void EnableUI()
+    {
+        _dialogueUI.SetActive(true);
+    }
+    private void DisableUI(DialogueEndEvent dialogueEndEvent)
+    {
+        _dialogueUI.SetActive(false);
     }
 }

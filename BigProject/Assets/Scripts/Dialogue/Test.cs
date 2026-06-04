@@ -1,16 +1,14 @@
 using Dialogue;
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class Test : MonoBehaviour, IInteractable
 {
-    [SerializeField]
-    private DialogueManager _manager;
-    [SerializeField]
-    private CharacterData _testCharacter;
+    [SerializeField] private DialogueManager _manager;
+    [SerializeField] private CharacterData _testCharacter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        DialogueManager.Instance.StartDialogue(_testCharacter.story[0]);
+        
         
     }
 
@@ -18,5 +16,11 @@ public class Test : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Interact(GameObject gameObject)
+    {
+        Debug.Log("Interact");
+        DialogueManager.Instance.StartDialogue(_testCharacter.story[0]);
     }
 }
