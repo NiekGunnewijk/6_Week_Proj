@@ -405,6 +405,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840028054}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1016469598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1016469599}
+  m_Layer: 0
+  m_Name: PLayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1016469599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016469598}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1603442702}
+  - {fileID: 1048742741}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048742738
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +450,7 @@ GameObject:
   - component: {fileID: 1048742740}
   - component: {fileID: 1048742739}
   - component: {fileID: 1048742742}
+  - component: {fileID: 1048742743}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -491,13 +525,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048742738}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00031026127, y: 0.9784014, z: -0.20670861, w: -0.0014663419}
-  m_LocalPosition: {x: -3.9399905, y: 14.661695, z: 27.641907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 11.989, y: 0, z: 0}
+  m_Father: {fileID: 1016469599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1048742742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,6 +576,20 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1048742743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048742738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cb66589ce824b44beaed0d68f30851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraMover
+  _target: {fileID: 1603442702}
+  _offset: {x: -7, y: 8, z: -7}
 --- !u!1 &1603442701
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +601,7 @@ GameObject:
   - component: {fileID: 1603442702}
   - component: {fileID: 1603442705}
   - component: {fileID: 1603442704}
+  - component: {fileID: 1603442708}
   - component: {fileID: 1603442706}
   - component: {fileID: 1603442703}
   - component: {fileID: 1603442707}
@@ -572,11 +621,11 @@ Transform:
   m_GameObject: {fileID: 1603442701}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.07, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1016469599}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1603442703
 CapsuleCollider:
@@ -699,6 +748,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &1603442708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603442701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ca0b0378870b44cac7d56232c29690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interact
+  _playerInput: {fileID: 0}
+  InteractRange: 1
 --- !u!1 &1870239888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,8 +1153,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1048742741}
   - {fileID: 1870239890}
   - {fileID: 191961870}
-  - {fileID: 1603442702}
+  - {fileID: 1016469599}
   - {fileID: 2117875394}
