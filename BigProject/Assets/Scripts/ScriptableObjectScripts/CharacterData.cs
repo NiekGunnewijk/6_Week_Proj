@@ -7,4 +7,5 @@ public class CharacterData : ScriptableObject
     public string characterName;
     public int friendshipLevel;
     public DialogueNode[] story;
+    public int currentDialogue;
 }

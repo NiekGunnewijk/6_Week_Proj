@@ -1,9 +1,12 @@
 namespace Dialogue
 {
+    [System.Serializable]
     public class DialogueChoice
     {
-        public string choiceText;
+        public string text;
         
         public DialogueNode nextNode;
+        
+        public DialogueCondition[] conditions;
     }
 }

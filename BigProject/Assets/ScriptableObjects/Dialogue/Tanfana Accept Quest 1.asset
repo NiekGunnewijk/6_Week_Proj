@@ -10,17 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f2eb0c4a1834594b9eb986c81e878ac, type: 3}
-  m_Name: Tanfana 1
+  m_Name: Tanfana Accept Quest 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  id: text_1_tanfana
+  id: Tan
   currentLine: 0
-  lines:
-  - character: Player
-    text: Are you Tanfana?
-  - character: Tanfana
-    text: "That\u2019s what people used to call me."
-  - character: Player
-    text: Used to?
-  - character: Tanfana
-    text: "It\u2019s been a long time since anyone asked."
+  lines: []
   conditions: []
+  choices: []

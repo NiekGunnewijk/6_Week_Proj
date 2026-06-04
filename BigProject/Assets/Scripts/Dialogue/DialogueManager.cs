@@ -1,20 +1,76 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.TextCore.Text;
 
 namespace Dialogue
 {
     public class DialogueManager : MonoBehaviour
     {
+        public static DialogueManager Instance { get; private set; }
+        
+        [SerializeField] 
+        private PlayerInput _playerInput;
         private DialogueNode _currentNode;
+        [SerializeField]
+        private DialogueUI _ui;
+        
+        private void OnEnable()
+        {
+            _playerInput.actions["Next"].performed += NextLine;
+            Instance = this;
+        }
+
+        private void OnDisable()
+        {
+            if(_playerInput != null) 
+                _playerInput.actions["Next"].performed -= NextLine;
+        }
+
+        private void NextLine(InputAction.CallbackContext obj)
+        {
+            Debug.Log("next");
+            NextLine(_currentNode);
+        }
 
         public void StartDialogue(DialogueNode dialogueNode)
         {
-            if(dialogueNode.conditions.Length > 0 && ConditionsMet(dialogueNode)) 
+            if (dialogueNode.conditions.Length <= 0 || ConditionsMet(dialogueNode))
+            {
+                dialogueNode.StartDialogue();
                 _currentNode = dialogueNode;
+                _ui.DisplayDialogue(_currentNode);
+            }
         }
 
-        public void SelectChoice(int index)
+        public void SelectChoice(DialogueChoice dialogueChoice)
         {
-            _currentNode = _currentNode.choices[index].nextNode;
+            StartDialogue(dialogueChoice.nextNode);
+        }
+
+        public void NextDialogue(CharacterData character)
+        {
+            StartDialogue(character.story[character.currentDialogue + 1]);
+        }
+
+        public void NextLine(DialogueNode currentDialogueNode)
+        {
+            if (currentDialogueNode.currentLine >= currentDialogueNode.lines.Length - 1)
+            {
+                if (_currentNode.choices.Length > 0)
+                {
+                    _ui.ShowChoices(currentDialogueNode);
+                }
+                else
+                {
+                    Debug.LogError("No choice found");
+                }
+            }
+            else
+            {
+                currentDialogueNode.currentLine++;
+                _ui.DisplayDialogue(currentDialogueNode);
+            }
+            
         }
         
         private bool ConditionsMet(DialogueNode node)
@@ -29,7 +85,6 @@ namespace Dialogue
                 if (!condition.Evaluate())
                     return false;
             }
-
             return true;
         }
     }

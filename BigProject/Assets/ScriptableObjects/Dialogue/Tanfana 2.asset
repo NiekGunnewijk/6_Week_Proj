@@ -13,6 +13,20 @@ MonoBehaviour:
   m_Name: Tanfana 2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   id: 
-  text: Goodbye World
+  currentLine: 0
+  lines:
+  - character: 'Player '
+    text: "Was there really a temple here? \r\n"
+  - character: 'Tanfana '
+    text: 'There was a sacred place '
+  - character: 'Player '
+    text: 'A temple? '
+  - character: 'Tanfana '
+    text: 'T: Some called it that, but most came for the hill itself. '
+  - character: 'Player '
+    text: 'P: Why? '
+  - character: 'Tanfana '
+    text: 'T: Because they believed it was special. '
   conditions:
   - {fileID: 0}
+  choices: []
