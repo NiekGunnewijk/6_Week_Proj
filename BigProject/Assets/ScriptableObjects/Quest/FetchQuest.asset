@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb503460289075748b5e45b090da856c, type: 3}
+  m_Name: FetchQuest
+  m_EditorClassIdentifier: Assembly-CSharp::FetchQuest
+  questName: Pick up the cube
+  questDescription: Pick up
+  completed: 1
+  currentValue: 1
+  questAmount: 1
+  item: {fileID: 11400000, guid: e0490dab36822b74abb718b734377a85, type: 2}

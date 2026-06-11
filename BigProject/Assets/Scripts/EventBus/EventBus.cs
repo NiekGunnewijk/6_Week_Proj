@@ -1,4 +1,5 @@
 using System;
+using CMGTSA.Inventory;
 
 /// <summary>
 /// This is a simple implementation of the event bus pattern
@@ -27,4 +28,14 @@ public abstract class Event{}
 public class DialogueEndEvent : Event
 {
     
+}
+
+public class PickUpEvent : Event
+{
+    public readonly ItemData Item;
+
+    public PickUpEvent(ItemData pItem)
+    {
+        Item = pItem;
+    }
 }

@@ -26,7 +26,6 @@ namespace Dialogue
 
         private void NextLine(InputAction.CallbackContext obj)
         {
-            Debug.Log("next");
             NextLine(_currentNode);
         }
 
@@ -43,7 +42,13 @@ namespace Dialogue
 
         public void SelectChoice(DialogueChoice dialogueChoice)
         {
+            foreach (var dialogueEvent in dialogueChoice.events)
+            {
+                dialogueEvent.Execute();
+                Debug.Log(dialogueEvent.name);
+            }
             StartDialogue(dialogueChoice.nextNode);
+            
         }
 
         public void NextDialogue(CharacterData character)
@@ -53,23 +58,26 @@ namespace Dialogue
 
         public void NextLine(DialogueNode currentDialogueNode)
         {
-            if (currentDialogueNode.currentLine >= currentDialogueNode.lines.Length - 1)
+            if (currentDialogueNode != null)
             {
-                if (_currentNode.choices.Length > 0)
+                if (currentDialogueNode.currentLine >= currentDialogueNode.lines.Length - 1)
                 {
-                    _ui.ShowChoices(currentDialogueNode);
+                    if (_currentNode.choices.Length > 0)
+                    {
+                        _ui.ShowChoices(currentDialogueNode);
+                    }
+                    else
+                    {
+                        EventBus<DialogueEndEvent>.Publish(new DialogueEndEvent());
+                        
+                    }
                 }
                 else
                 {
-                    EventBus<DialogueEndEvent>.Publish(new DialogueEndEvent());
+                    currentDialogueNode.currentLine++;
+                    _ui.DisplayDialogue(currentDialogueNode);
                 }
             }
-            else
-            {
-                currentDialogueNode.currentLine++;
-                _ui.DisplayDialogue(currentDialogueNode);
-            }
-            
         }
         
         private bool ConditionsMet(DialogueNode node)
@@ -85,6 +93,11 @@ namespace Dialogue
                     return false;
             }
             return true;
+        }
+
+        private void ExecuteEvents(DialogueNode node)
+        {
+            
         }
     }
 }
