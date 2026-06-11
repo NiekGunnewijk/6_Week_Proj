@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f2eb0c4a1834594b9eb986c81e878ac, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 
+  currentLine: 0
+  lines:
+  - character: Player
+    text: Do you hate the romans?
+  - character: Tanfana
+    text: No.
+  - character: Player
+    text: They destroyed your sanctuary
+  - character: Tanfana
+    text: They destroyed a place.
+  - character: Player
+    text: "Isn\u2019t that the same thing?"
+  - character: Tanfana
+    text: No. You can destroy the physical, but the stories stay alive.
+  conditions: []
+  choices:
+  - text: What do we know about the celebration?
+    nextNode: {fileID: 11400000, guid: 5fbed856f38ba984c912b5f2c8cc0ae2, type: 2}
+    conditions: []
+  - text: Why were the Romans there?
+    nextNode: {fileID: 11400000, guid: 9fd4d5dc4ffb5754ab67f5b59518e4de, type: 2}
+    conditions: []
+  - text: Is that how your worship ended?
+    nextNode: {fileID: 11400000, guid: 02304a58b080c23409976ffb5abdcd55, type: 2}
+    conditions: []
+  - text: Do you think the romans are the reason people forgot?
+    nextNode: {fileID: 11400000, guid: 3305be4f1f7d77e4e850c0b9b3848173, type: 2}
+    conditions: []

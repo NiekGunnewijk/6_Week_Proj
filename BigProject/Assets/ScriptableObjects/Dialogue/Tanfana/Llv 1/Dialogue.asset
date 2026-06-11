@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f2eb0c4a1834594b9eb986c81e878ac, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 
+  currentLine: 0
+  lines:
+  - character: Player
+    text: Was there really a temple here?
+  - character: Tanfana
+    text: There was a sacred place.
+  - character: Player
+    text: "What\u2019s the difference?"
+  - character: Tanfana
+    text: The sanctuary stood on the hill, but people came because they believed
+      the hill was sacred
+  conditions: []
+  choices:
+  - text: Do people really travel all the way just for a hill?
+    nextNode: {fileID: 11400000, guid: 9e93a90d4d80a59418f43e57cc6da136, type: 2}
+    conditions: []
+  - text: What did they do when they got here?
+    nextNode: {fileID: 11400000, guid: ff59d2874d766e6479a557f46b94ed46, type: 2}
+    conditions: []
+  - text: "It doesn\u2019t look special."
+    nextNode: {fileID: 11400000, guid: 9e78daab3b575af4c92542f47a131864, type: 2}
+    conditions: []

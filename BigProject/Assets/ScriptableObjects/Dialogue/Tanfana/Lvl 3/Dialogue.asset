@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f2eb0c4a1834594b9eb986c81e878ac, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 
+  currentLine: 0
+  lines:
+  - character: Player
+    text: What was in the cup?
+  - character: Tanfana
+    text: Water from the spring.
+  - character: Player
+    text: Why was the spring sacred?
+  - character: Tanfana
+    text: People believed its water carried blessings.
+  conditions: []
+  choices:
+  - text: 'What happened during the ceremonies? '
+    nextNode: {fileID: 11400000, guid: e7db44ccfd563c34e8c2471a9dcf1cb6, type: 2}
+    conditions: []
+  - text: Did the golden cup really exist?
+    nextNode: {fileID: 11400000, guid: 5585b88c1ef5e8249b8f1191ace471a3, type: 2}
+    conditions: []
+  - text: Why gold?
+    nextNode: {fileID: 11400000, guid: 98758cec2fb536d4cbb3131c0c96a58b, type: 2}
+    conditions: []
+  - text: What did people hope the water would do?
+    nextNode: {fileID: 11400000, guid: fa01e5fa5274cf148bf5271db02013ec, type: 2}
+    conditions: []
