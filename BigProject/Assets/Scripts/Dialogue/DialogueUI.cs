@@ -47,6 +47,15 @@ public class DialogueUI : MonoBehaviour
 
         button.GetComponentInChildren<TextMeshProUGUI>()
             .text = choice.text;
+        
+        if (choice.conditions.Length <= 0 || ConditionsMet(choice))
+        {
+            button.interactable = true;
+        }
+        else
+        {
+            button.interactable = false;
+        }
 
         button.onClick.AddListener(() =>
         {
@@ -54,6 +63,8 @@ public class DialogueUI : MonoBehaviour
                 .SelectChoice(choice);
             DestroyButtons();
         });
+        
+        
     }
 
     private void DestroyButtons()
@@ -71,5 +82,20 @@ public class DialogueUI : MonoBehaviour
     private void DisableUI(DialogueEndEvent dialogueEndEvent)
     {
         _dialogueUI.SetActive(false);
+        DestroyButtons();
+    }
+    private bool ConditionsMet(DialogueChoice node)
+    {
+        foreach (DialogueCondition condition in node.conditions)
+        {
+            if (condition == null)
+            {
+                Debug.LogError("condition is null in dialogue node ");
+                break;
+            }
+            if (!condition.Evaluate())
+                return false;
+        }
+        return true;
     }
 }

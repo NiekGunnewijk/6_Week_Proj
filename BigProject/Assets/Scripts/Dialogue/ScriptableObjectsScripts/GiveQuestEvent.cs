@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Dialogue
 {
-    [CreateAssetMenu(fileName = "DialogueNode", menuName = "Dialogue/Event/GiveQuestEvent")]
+    [CreateAssetMenu(fileName = "GiveQuestEvent", menuName = "Dialogue/Event/GiveQuestEvent")]
     public class GiveQuestEvent : DialogueEvent
     {
         public Quest quest;

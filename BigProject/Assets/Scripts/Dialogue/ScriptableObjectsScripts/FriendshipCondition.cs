@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Dialogue
 {
-    [CreateAssetMenu(fileName = "DialogueNode", menuName = "Dialogue/Condition/FriendshipCondition")]
+    [CreateAssetMenu(fileName = "FriendshipCondition", menuName = "Dialogue/Condition/FriendshipCondition")]
     public class FriendshipCondition : DialogueCondition
     {
         public int friendshipLevel;
