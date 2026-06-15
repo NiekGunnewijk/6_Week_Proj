@@ -8,5 +8,7 @@ namespace Dialogue
         public DialogueNode nextNode;
         
         public DialogueCondition[] conditions;
+        
+        public DialogueEvent[] events;
     }
 }
