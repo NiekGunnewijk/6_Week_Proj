@@ -28,5 +28,6 @@ MonoBehaviour:
   - character: 'Tanfana '
     text: 'T: Because they believed it was special. '
   conditions:
-  - {fileID: 11400000, guid: 98d3e8faed6d1ea43bbb7545b3c3add7, type: 2}
+  - {fileID: 11400000, guid: 2aa812b8d4ed5104db67a3e1e2d2d417, type: 2}
+  conditionNotMetNode: {fileID: 0}
   choices: []

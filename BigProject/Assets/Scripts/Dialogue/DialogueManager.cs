@@ -38,17 +38,27 @@ namespace Dialogue
                 _ui.DisplayDialogue(_currentNode);
                 _ui.EnableUI();
             }
+            else
+            {
+                StartDialogue(dialogueNode.conditionNotMetNode);
+                Debug.Log("Dialogue conditions not met");
+            }
         }
 
         public void SelectChoice(DialogueChoice dialogueChoice)
         {
-            foreach (var dialogueEvent in dialogueChoice.events)
+            if (dialogueChoice.events.Length > 0)
             {
-                dialogueEvent.Execute();
-                Debug.Log(dialogueEvent.name);
+                foreach (var dialogueEvent in dialogueChoice.events)
+                {
+                    if (dialogueEvent != null)
+                    {
+                        dialogueEvent.Execute();
+                        //Debug.Log(dialogueEvent.name);
+                    }
+                }
             }
             StartDialogue(dialogueChoice.nextNode);
-            
         }
 
         public void NextDialogue(CharacterData character)
@@ -94,6 +104,7 @@ namespace Dialogue
             }
             return true;
         }
+        
 
         private void ExecuteEvents(DialogueNode node)
         {

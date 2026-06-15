@@ -13,6 +13,8 @@ public class DialogueNode : ScriptableObject
     public DialogueLine[] lines;
     
     public DialogueCondition[] conditions;
+
+    public DialogueNode conditionNotMetNode; 
     
     public DialogueChoice[] choices;
 

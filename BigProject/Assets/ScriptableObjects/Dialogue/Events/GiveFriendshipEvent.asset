@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72b9649c2ee8400c879029a312075994, type: 3}
-  m_Name: DialogueNode 2
-  m_EditorClassIdentifier: Assembly-CSharp::Dialogue.QuestCondition
-  questId: 
+  m_Script: {fileID: 11500000, guid: 110dcdc256b44acebe249c6851fb9929, type: 3}
+  m_Name: GiveFriendshipEvent
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue.GiveFriendshipEvent
+  characterData: {fileID: 0}
+  friendship: 0
