@@ -3,23 +3,25 @@ using System.Collections.Generic;
 using System;
 using System.Reflection;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using System.Text;
 
 public class NFC : MonoBehaviour
 {
 
-    public string tagID;
-    public Text tag_output_text;
-    public bool tagFound = false;
+    private string tagID;
+    private Text tag_output_text;
+    private bool tagFound = false;
 
     private AndroidJavaObject mActivity;
     private AndroidJavaObject mIntent;
-    private string sAction;
+    public static event Action<string> OnNFCRetrieved;
 
 
     private void OnApplicationFocus(bool focus)
     {
+
         if (focus)
         {
             CheckNFC();
@@ -28,41 +30,41 @@ public class NFC : MonoBehaviour
 
     void CheckNFC()
     {
-        mActivity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity"); // Activities open apps
-        mIntent = mActivity.Call<AndroidJavaObject>("getIntent");
+        try{
 
-        if (mIntent.Call<string>("getAction") == "android.nfc.action.TECH_DISCOVERED")
-        {
-            AndroidJavaObject[] ndefMessages = mIntent.Call<AndroidJavaObject[]>("getParcelableArrayExtra", "android.nfc.extra.NDEF_MESSAGES");
+            mActivity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity"); // Activities open apps
+            mIntent = mActivity.Call<AndroidJavaObject>("getIntent");
 
-            if (ndefMessages == null || ndefMessages.Length == 0)
+            if (mIntent.Call<string>("getAction") == "android.nfc.action.TECH_DISCOVERED")
             {
-                Debug.Log("No NDEF messages found.");
-                return;
-            }
+                AndroidJavaObject[] ndefMessages = mIntent.Call<AndroidJavaObject[]>("getParcelableArrayExtra", "android.nfc.extra.NDEF_MESSAGES");
 
-            foreach (var message in ndefMessages)
-            {
-                AndroidJavaObject[] records = message.Call<AndroidJavaObject[]>("getRecords");
-                foreach (var record in records)
+                if (ndefMessages == null || ndefMessages.Length == 0)
                 {
-                    byte[] payload = record.Call<byte[]>("getPayload");
-                    string text = DecodeTextPayload(payload);
-
-                    if (text == "Yo Mamma")
-                    {
-                        tag_output_text.text = "She so fat";
-                    }
-                    if (text == "model")
-                    {
-                        tag_output_text.text = "boring";
-                    }
-
-                    Debug.Log("NFC content: " + text);
-                    tag_output_text.text = text;
+                    Debug.Log("No NDEF messages found.");
+                    return;
                 }
 
-            }
+                foreach (var message in ndefMessages)
+                {
+                    AndroidJavaObject[] records = message.Call<AndroidJavaObject[]>("getRecords");
+                    foreach (var record in records)
+                    {
+                        byte[] payload = record.Call<byte[]>("getPayload");
+                        string text = DecodeTextPayload(payload);
+
+                        if (OnNFCRetrieved != null)
+                        {
+                            OnNFCRetrieved(text); //cut string
+                        }
+                    }
+
+                }
+        }
+        }
+        catch
+        {
+            Debug.Log("No activity");
         }
     }
 
