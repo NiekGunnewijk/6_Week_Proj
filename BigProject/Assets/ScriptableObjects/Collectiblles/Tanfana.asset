@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2312df1cd4f36494f9189a2658d2bac1, type: 3}
+  m_Name: Tanfana
+  m_EditorClassIdentifier: Assembly-CSharp::Collectible
+  CharData: {fileID: 11400000, guid: fbc7166ab9922554c90f3e071207eb39, type: 2}
+  CharacterObject: {fileID: 168578646616142056, guid: 9b2641e7102e80a4c85baeb021a88497, type: 3}
+  CharacterHouse: {fileID: 0}
