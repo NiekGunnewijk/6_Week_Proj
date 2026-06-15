@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 934a2c9158ab8354d856fb572cc880ed, type: 3}
   m_Name: SecondDialogue
   m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogueEvent
-  characterData: {fileID: 0}
-  dialogueNode: {fileID: 0}
+  characterData: {fileID: 11400000, guid: fbc7166ab9922554c90f3e071207eb39, type: 2}
+  dialogueNode: {fileID: 11400000, guid: aa71ad72b3f3c9d4ca0316912bd47c3f, type: 2}
