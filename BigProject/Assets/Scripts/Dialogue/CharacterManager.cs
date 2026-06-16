@@ -3,6 +3,8 @@ using Dialogue;
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(CharacterMovement))]
 public class CharacterManager : MonoBehaviour, IInteractable
 {
     public CharacterData characterData;

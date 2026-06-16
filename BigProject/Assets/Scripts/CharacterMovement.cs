@@ -9,7 +9,7 @@ public class CharacterMovement : MonoBehaviour
     //[SerializeField] private Animator animator;
     //[SerializeField] private SpriteRenderer buddySpriteRenderer;
     [SerializeField] private NavMeshAgent agent;
-    [SerializeField] private movement movement;
+    [SerializeField] private Movement movement;
     private Vector3 pointOnNavMesh = Vector3.zero;
     private float lastXCoord = 0;
     float timePassed = 0;
@@ -17,7 +17,7 @@ public class CharacterMovement : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        movement = FindFirstObjectByType<movement>();
+        movement = FindFirstObjectByType<Movement>();
         lastXCoord = this.transform.position.x;
         GetPointOnNavMesh();
     }

@@ -4,7 +4,7 @@ using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 
-public class movement : MonoBehaviour 
+public class Movement : MonoBehaviour 
 {
     public Vector3 GetRandomPoint()
     {
