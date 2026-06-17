@@ -18,5 +18,3 @@ MonoBehaviour:
   story:
   - {fileID: 11400000, guid: 4db0cdcfb17fe5e41b05c0e420bd2352, type: 2}
   - {fileID: 11400000, guid: aa71ad72b3f3c9d4ca0316912bd47c3f, type: 2}
-  currentDialogueNode: {fileID: 11400000, guid: 4db0cdcfb17fe5e41b05c0e420bd2352, type: 2}
-  currentDialogue: 0

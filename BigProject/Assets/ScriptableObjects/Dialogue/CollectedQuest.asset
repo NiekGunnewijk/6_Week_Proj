@@ -14,20 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   id: 
   currentLine: 0
-  lines:
-  - character: Tanfana
-    text: Have you found the marker
+  lines: []
   conditions: []
   conditionNotMetNode: {fileID: 0}
-  choices:
-  - text: Yes
-    nextNode: {fileID: 11400000, guid: 8bf96e756a27c0e4d94208184498ac00, type: 2}
-    conditions:
-    - {fileID: 11400000, guid: 2aa812b8d4ed5104db67a3e1e2d2d417, type: 2}
-    events:
-    - {fileID: 11400000, guid: f5cfde3e292943742b3992e8b8dcedba, type: 2}
-    - {fileID: 11400000, guid: 5452a1baa136f194fae571a465bda460, type: 2}
-  - text: No
-    nextNode: {fileID: 11400000, guid: 58217b78209cadb44abd91faca406e98, type: 2}
-    conditions: []
-    events: []
+  choices: []

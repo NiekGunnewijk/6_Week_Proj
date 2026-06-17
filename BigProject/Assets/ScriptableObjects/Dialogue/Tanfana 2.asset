@@ -22,12 +22,12 @@ MonoBehaviour:
   - character: 'Player '
     text: 'A temple? '
   - character: 'Tanfana '
-    text: 'Some called it that, but most came for the hill itself. '
+    text: 'T: Some called it that, but most came for the hill itself. '
   - character: 'Player '
-    text: 'Why? '
+    text: 'P: Why? '
   - character: 'Tanfana '
-    text: 'Because they believed it was special. '
+    text: 'T: Because they believed it was special. '
   conditions:
   - {fileID: 11400000, guid: 2aa812b8d4ed5104db67a3e1e2d2d417, type: 2}
-  conditionNotMetNode: {fileID: 11400000, guid: 5ee1c70a455b4f14181821993a7504e5, type: 2}
+  conditionNotMetNode: {fileID: 0}
   choices: []

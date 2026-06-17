@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   id: 
   currentLine: 0
-  lines:
-  - character: Tanfana
-    text: That is unfortunate
+  lines: []
   conditions: []
   conditionNotMetNode: {fileID: 0}
   choices: []
