@@ -24,14 +24,19 @@ MonoBehaviour:
   - character: Tanfana
     text: The sanctuary stood on the hill, but people came because they believed
       the hill was sacred
-  conditions: []
+  conditions:
+  - {fileID: 11400000, guid: 13ab414119da612499ade58f5212402e, type: 2}
+  conditionNotMetNode: {fileID: 0}
   choices:
   - text: Do people really travel all the way just for a hill?
     nextNode: {fileID: 11400000, guid: 9e93a90d4d80a59418f43e57cc6da136, type: 2}
     conditions: []
+    events: []
   - text: What did they do when they got here?
     nextNode: {fileID: 11400000, guid: ff59d2874d766e6479a557f46b94ed46, type: 2}
     conditions: []
+    events: []
   - text: "It doesn\u2019t look special."
     nextNode: {fileID: 11400000, guid: 9e78daab3b575af4c92542f47a131864, type: 2}
     conditions: []
+    events: []
