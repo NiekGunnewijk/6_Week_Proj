@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f2eb0c4a1834594b9eb986c81e878ac, type: 3}
+  m_Name: Historian
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 
+  currentLine: 0
+  lines:
+  - character: Player
+    text: "Excuse me, I\u2019m looking for information about a stone that was connected
+      to Tanfana\u2019s sacred place."
+  - character: Historian
+    text: You mean the stone in the centre of the village? Most people walk past
+      it every day without thinking about it.
+  - character: Player
+    text: "That\u2019s the same stone?"
+  - character: Historian
+    text: People believed it had fallen from the heavens, Some claimed it brought
+      visions, others said they could hear voices when standing near it.
+  - character: Player
+    text: Is there any proof of that?
+  - character: Historian
+    text: Proof? No. Records? Maybe. We keep some old documents in the village archives.
+      If you want to know more, you should start there.
+  conditions: []
+  conditionNotMetNode: {fileID: 0}
+  choices: []

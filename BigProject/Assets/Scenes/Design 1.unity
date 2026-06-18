@@ -557,6 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae277692ee72fcd468cd4d1f69bedb12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIToggle
+  targetUI: {fileID: 0}
 --- !u!114 &375481684
 MonoBehaviour:
   m_ObjectHideFlags: 0

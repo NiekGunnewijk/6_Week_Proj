@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f2eb0c4a1834594b9eb986c81e878ac, type: 3}
+  m_Name: Villager 3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 
+  currentLine: 0
+  lines:
+  - character: Player
+    text: "I\u2019m collecting stories about Tanfana."
+  - character: Villager
+    text: "Then here\u2019s another one. Some people believed she wasn\u2019t a goddess
+      at all."
+  - character: Player
+    text: Who was she then?
+  - character: Villager
+    text: A queen. A powerful woman whose story grew larger with every generation
+      until she became a legend.
+  - character: Player
+    text: So nobody knows the truth?
+  - character: Villager
+    text: "If they ever did, it\u2019s been forgotten."
+  conditions: []
+  conditionNotMetNode: {fileID: 0}
+  choices: []
