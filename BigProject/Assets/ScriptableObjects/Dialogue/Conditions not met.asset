@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 
   currentLine: 0
   lines:
-  - character: Tanfana
-    text: Please compleate quest for me
+  - character: 
+    text: Conditions not met
   conditions: []
   conditionNotMetNode: {fileID: 0}
   choices: []

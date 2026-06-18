@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 934a2c9158ab8354d856fb572cc880ed, type: 3}
   m_Name: Collectected first Quest
   m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogueEvent
-  characterData: {fileID: 11400000, guid: fbc7166ab9922554c90f3e071207eb39, type: 2}
-  dialogueNode: {fileID: 11400000, guid: fee351d8403a1dd4f8fa73054ca7622b, type: 2}
+  dialogueNode: {fileID: 0}

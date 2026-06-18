@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f2eb0c4a1834594b9eb986c81e878ac, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 
+  currentLine: 0
+  lines:
+  - character: Player
+    text: Why are the Witte Wieven connected to grave hills?
+  - character: Witte Wieven
+    text: Many believed our spirits remained there after death.
+  conditions: []
+  choices:
+  - text: People really left offerings?
+    nextNode: {fileID: 11400000, guid: 212aaf70074a17143982a0926f52229b, type: 2}
+    conditions: []
+  - text: Is that were the mist stories originate?
+    nextNode: {fileID: 11400000, guid: b121d17a5f41a5a4bbfcace27d4b76d0, type: 2}
+    conditions: []
+  - text: Were people afraid of these places?
+    nextNode: {fileID: 11400000, guid: 260cb55a15aa04544aa483bd8a88e3fa, type: 2}
+    conditions: []
