@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   id: 
   characterName: Tanfana
-  friendshipLevel: 0
+  friendshipLevel: 20
   mainStory: {fileID: 11400000, guid: 4e1c14b0522b6f641ab5e52102060a84, type: 2}
   storyNodes:
   - {fileID: 11400000, guid: 495b8d3b178f0134a953dc119f6aadb6, type: 2}
@@ -22,5 +22,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: da312855c54f2514db9aaf6525b5017b, type: 2}
   - {fileID: 11400000, guid: 4fc3ff4a71a9d564998d13bc64a67904, type: 2}
   - {fileID: 11400000, guid: 0da9ed3ffc4000849915d47dd493bb8d, type: 2}
-  currentDialogueNode: {fileID: 11400000, guid: da312855c54f2514db9aaf6525b5017b, type: 2}
+  currentDialogueNode: {fileID: 11400000, guid: 4fc3ff4a71a9d564998d13bc64a67904, type: 2}
   currentDialogue: 0

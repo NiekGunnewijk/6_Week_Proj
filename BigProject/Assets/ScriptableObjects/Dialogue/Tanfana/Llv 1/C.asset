@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: C
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   id: 
-  currentLine: 0
+  currentLine: 2
   lines:
   - character: Tanfana
     text: They did.
   - character: Tanfana
     text: Some came from nearby villages, others from much further away.
+  - character: Tanfana
+    text: Visit the Historian he knows more information.
   conditions: []
+  conditionNotMetNode: {fileID: 0}
   choices: []
+  events: []

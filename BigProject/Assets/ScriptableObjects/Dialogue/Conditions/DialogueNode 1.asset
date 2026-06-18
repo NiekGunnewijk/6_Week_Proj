@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DialogueNode 1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue.FriendshipCondition
   friendshipLevel: 0
-  characterData: {fileID: 0}
+  characterData: {fileID: 11400000, guid: fbc7166ab9922554c90f3e071207eb39, type: 2}

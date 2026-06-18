@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4edb96d56b37944a93ba7e78cdc251a, type: 3}
   m_Name: SpawnHistorion
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue.SpawnAssetsEvent
-  spawnPoint: {x: 0, y: 0, z: 0}
-  spawnObject: {fileID: 0}
-  amount: 0
+  spawnPoint: {x: 10, y: 1, z: 15}
+  spawnObject: {fileID: 8539819778158636965, guid: 0b73113ea74cddc4a9b07cad50aab6e4, type: 3}
+  amount: 1
   offsetX: 0
   offsetZ: 0

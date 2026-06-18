@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4edb96d56b37944a93ba7e78cdc251a, type: 3}
   m_Name: BookSpawn
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue.SpawnAssetsEvent
-  spawnPoint: {x: 30, y: 0.8, z: 17}
+  spawnPoint: {x: 17, y: 0.8, z: 17}
   spawnObject: {fileID: 4982081691928042027, guid: 67ec6b196fec5cb4b981525c33d2671f, type: 3}
   amount: 1
   offsetX: 0

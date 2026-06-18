@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   id: 
-  currentLine: 0
+  currentLine: 4
   lines:
   - character: Player
     text: Was there really a temple here?
@@ -21,6 +21,9 @@ MonoBehaviour:
     text: There was a sacred place.
   - character: Player
     text: "What\u2019s the difference?"
+  - character: Tanfana
+    text: The sanctuary stood on the hill, but people came because they believed
+      the hill was sacred
   - character: Tanfana
     text: The sanctuary stood on the hill, but people came because they believed
       the hill was sacred
@@ -32,13 +35,15 @@ MonoBehaviour:
     nextNode: {fileID: 11400000, guid: 9e93a90d4d80a59418f43e57cc6da136, type: 2}
     conditions: []
     events:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: be27670019d826e4a82f08402ad1bc0c, type: 2}
   - text: What did they do when they got here?
     nextNode: {fileID: 11400000, guid: ff59d2874d766e6479a557f46b94ed46, type: 2}
     conditions: []
-    events: []
+    events:
+    - {fileID: 11400000, guid: be27670019d826e4a82f08402ad1bc0c, type: 2}
   - text: "It doesn\u2019t look special."
     nextNode: {fileID: 11400000, guid: 9e78daab3b575af4c92542f47a131864, type: 2}
     conditions: []
-    events: []
+    events:
+    - {fileID: 11400000, guid: be27670019d826e4a82f08402ad1bc0c, type: 2}
   events: []
