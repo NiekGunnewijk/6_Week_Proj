@@ -36,7 +36,7 @@ namespace EventBus
         private void OnEnable()
         {
             questText.text = fetchQuest.questName + "\n"+  fetchQuest.questDescription +  " " +fetchQuest.item.name + " " + fetchQuest.currentValue + "/" + fetchQuest.questAmount;
-            fetchQuest = (FetchQuest)quest;
+            //fetchQuest = (FetchQuest)quest;
             EventBus<PickUpEvent>.OnEvent += DisplayText;
         }
 

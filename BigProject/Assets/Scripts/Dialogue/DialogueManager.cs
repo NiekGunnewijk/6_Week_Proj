@@ -74,7 +74,7 @@ namespace Dialogue
                     else
                     {
                         EventBus<DialogueEndEvent>.Publish(new DialogueEndEvent());
-                        
+                        ExecuteEvents(currentDialogueNode);
                     }
                 }
                 else
@@ -103,7 +103,10 @@ namespace Dialogue
 
         private void ExecuteEvents(DialogueNode node)
         {
-            
+            foreach (var dialogueEvent in node.events)
+            {
+                dialogueEvent.Execute();
+            }
         }
     }
 }

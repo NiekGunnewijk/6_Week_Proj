@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FetchQuestController
   questText: {fileID: 0}
   quest: {fileID: 0}
-  fetchQuest: {fileID: 11400000, guid: 64e30e84e0cfaf147885a7a6c1faeb0f, type: 2}
+  fetchQuest: {fileID: 0}

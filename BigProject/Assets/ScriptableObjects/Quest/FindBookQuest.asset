@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb503460289075748b5e45b090da856c, type: 3}
+  m_Name: FindBookQuest
+  m_EditorClassIdentifier: Assembly-CSharp::FetchQuest
+  questID: 0
+  questName: Find Book
+  questDescription: Find The Book
+  completed: 0
+  currentValue: 0
+  questAmount: 1
+  item: {fileID: 11400000, guid: a73a4d86a1e3e934f953278150fba5a2, type: 2}
