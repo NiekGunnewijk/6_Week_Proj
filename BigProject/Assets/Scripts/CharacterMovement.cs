@@ -8,8 +8,8 @@ public class CharacterMovement : MonoBehaviour
     
     //[SerializeField] private Animator animator;
     //[SerializeField] private SpriteRenderer buddySpriteRenderer;
-    [SerializeField] private NavMeshAgent agent;
-    [SerializeField] private Movement movement;
+    private NavMeshAgent agent;
+    private Movement movement;
     private Vector3 pointOnNavMesh = Vector3.zero;
     private float lastXCoord = 0;
     float timePassed = 0;
@@ -38,14 +38,6 @@ public class CharacterMovement : MonoBehaviour
     public void Update()
     {
         float currentXCoord = this.transform.position.x;
-        if (currentXCoord > lastXCoord)
-        {
-            //buddySpriteRenderer.flipX = true;
-        }
-        else if (currentXCoord < lastXCoord)
-        {
-           // buddySpriteRenderer.flipX = false;
-        }
         
         lastXCoord = currentXCoord;
         

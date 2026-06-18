@@ -7,7 +7,7 @@ public class QuestCreator : MonoBehaviour
     public static QuestCreator Instance;
     [SerializeField] private Transform questContainer;
     [SerializeField] private TextMeshProUGUI questText;
-    [SerializeField] private QuestController questController;
+    public QuestController questController;
     public void Awake()
     {
         Instance = this;
