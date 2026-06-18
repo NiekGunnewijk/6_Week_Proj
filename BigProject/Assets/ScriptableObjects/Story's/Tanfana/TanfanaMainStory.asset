@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ed9010a4ceca24db0d85afdec1f4e6, type: 3}
+  m_Name: TanfanaMainStory
+  m_EditorClassIdentifier: Assembly-CSharp::StoryNode
+  storyPart: "Little is known of Tanfana, an ancient deity once worshipped in the
+    lands of Twente. \r\n\r\nLegends tell of a sacred place upon the Tankenberg where
+    her followers gathered beside a great stone and a holy spring. During their ceremonies,
+    they drank sacred water from a golden cup said to grant wisdom and visions. \r\n\r\nThe
+    Romans are said to have destroyed her sanctuary during a great festival and over
+    time her worship faded from memory. Yet stories of Tanfana endured. \r\n\r\nEven
+    now, travelers speak of a pale woman wandering the mist-covered hills. Whether
+    she is a goddess, a spirit or merely a legend, no one can say. \r\n\r\nThose
+    who seek the truth may find that the old stories are not as forgotten as they
+    seem. "

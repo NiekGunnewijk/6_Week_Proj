@@ -61,11 +61,6 @@ namespace Dialogue
             StartDialogue(dialogueChoice.nextNode);
         }
 
-        public void NextDialogue(CharacterData character)
-        {
-            StartDialogue(character.story[character.currentDialogue + 1]);
-        }
-
         public void NextLine(DialogueNode currentDialogueNode)
         {
             if (currentDialogueNode != null)
