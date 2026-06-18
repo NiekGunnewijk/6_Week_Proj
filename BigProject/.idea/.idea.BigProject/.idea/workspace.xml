@@ -6,20 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6d4045e3-c8e4-45d9-bcfd-2a0df91bb4ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BigProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mathijs.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mathijs.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Conditions/DialogueNode 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Conditions/DialogueNode 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Tanfana 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Tanfana 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Tanfana 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Tanfana 2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/DialogueNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/DialogueNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/FriendshipCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/FriendshipCondition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/GiveFriendshipEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/GiveFriendshipEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/GiveQuestEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/GiveQuestEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/QuestCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/QuestCondition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/CharacterManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Test.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/CharacterManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/CharacterManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/movement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +30,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/CharacterData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/Quests/Quest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@21a28c3a6c83/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4f1fe1b9ff5744ae93787e1eaefd28581aa00/42/f132dc51/AndroidJavaObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -130,6 +121,7 @@
       <workItem from="1780990155599" duration="11239000" />
       <workItem from="1781166708757" duration="9844000" />
       <workItem from="1781515314284" duration="1275000" />
+      <workItem from="1781598652880" duration="4893000" />
     </task>
     <servers />
   </component>
