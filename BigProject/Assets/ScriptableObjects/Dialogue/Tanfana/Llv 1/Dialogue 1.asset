@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f2eb0c4a1834594b9eb986c81e878ac, type: 3}
-  m_Name: Dialogue
+  m_Name: Dialogue 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   id: 
   currentLine: 0
@@ -31,7 +31,8 @@ MonoBehaviour:
   - text: Do people really travel all the way just for a hill?
     nextNode: {fileID: 11400000, guid: 9e93a90d4d80a59418f43e57cc6da136, type: 2}
     conditions: []
-    events: []
+    events:
+    - {fileID: 0}
   - text: What did they do when they got here?
     nextNode: {fileID: 11400000, guid: ff59d2874d766e6479a557f46b94ed46, type: 2}
     conditions: []
@@ -40,3 +41,4 @@ MonoBehaviour:
     nextNode: {fileID: 11400000, guid: 9e78daab3b575af4c92542f47a131864, type: 2}
     conditions: []
     events: []
+  events: []

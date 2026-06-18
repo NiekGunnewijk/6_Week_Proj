@@ -19,8 +19,8 @@ MonoBehaviour:
   storyNodes:
   - {fileID: 11400000, guid: 495b8d3b178f0134a953dc119f6aadb6, type: 2}
   dialogouNodes:
-  - {fileID: 11400000, guid: 4db0cdcfb17fe5e41b05c0e420bd2352, type: 2}
-  - {fileID: 11400000, guid: 8bf96e756a27c0e4d94208184498ac00, type: 2}
-  - {fileID: 11400000, guid: aa71ad72b3f3c9d4ca0316912bd47c3f, type: 2}
-  currentDialogueNode: {fileID: 11400000, guid: 4db0cdcfb17fe5e41b05c0e420bd2352, type: 2}
+  - {fileID: 11400000, guid: da312855c54f2514db9aaf6525b5017b, type: 2}
+  - {fileID: 11400000, guid: 4fc3ff4a71a9d564998d13bc64a67904, type: 2}
+  - {fileID: 11400000, guid: 0da9ed3ffc4000849915d47dd493bb8d, type: 2}
+  currentDialogueNode: {fileID: 11400000, guid: da312855c54f2514db9aaf6525b5017b, type: 2}
   currentDialogue: 0
