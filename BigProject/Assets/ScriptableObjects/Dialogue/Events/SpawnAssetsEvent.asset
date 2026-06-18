@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4edb96d56b37944a93ba7e78cdc251a, type: 3}
   m_Name: SpawnAssetsEvent
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue.SpawnAssetsEvent
-  obj: {fileID: 0}
+  spawnPoint: {x: 6, y: 1, z: 18}
+  spawnObject: {fileID: 2120303963362991443, guid: 14412cd799080b644a918d4e2041e53c, type: 3}
+  amount: 4
+  offsetX: 5
+  offsetZ: 5

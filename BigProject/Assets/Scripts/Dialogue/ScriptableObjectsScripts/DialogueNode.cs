@@ -17,6 +17,8 @@ public class DialogueNode : ScriptableObject
     public DialogueNode conditionNotMetNode; 
     
     public DialogueChoice[] choices;
+    
+    public DialogueEvent[] events;
 
     private void OnEnable()
     {

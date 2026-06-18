@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934a2c9158ab8354d856fb572cc880ed, type: 3}
+  m_Name: HistorianReminder
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogueEvent
+  characterData: {fileID: 11400000, guid: 9f60c49d63576ed4c8b4e7c74efb1c48, type: 2}
+  dialogueNode: {fileID: 11400000, guid: e7db44ccfd563c34e8c2471a9dcf1cb6, type: 2}

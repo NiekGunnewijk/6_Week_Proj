@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b95f925254d4ce3a88a2112545d43d1, type: 3}
   m_Name: Tafana 1 Quest
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue.GiveQuestEvent
+  questController: {fileID: 892202439954449666, guid: c3f83f17568494d4897556f9bb946e0d, type: 3}
   quest: {fileID: 11400000, guid: 64e30e84e0cfaf147885a7a6c1faeb0f, type: 2}

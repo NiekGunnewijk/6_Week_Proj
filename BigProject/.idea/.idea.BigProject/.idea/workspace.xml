@@ -6,13 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="6d4045e3-c8e4-45d9-bcfd-2a0df91bb4ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BigProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Artist Stuff/Son/Materials/standardSurface1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Artist Stuff/Son/Materials/standardSurface1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Marker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Marker.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/Events/GiveQuestEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/Events/GiveQuestEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/SpawnAssetsEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/ScriptableObjectsScripts/SpawnAssetsEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Choice Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Choice Button.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DIOlogue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DIOlogue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Design 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Design 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Characters/Tanfana.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Characters/Tanfana.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Events/SecondDialogue.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Events/SecondDialogue.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Tanfana/Llv 1/Dialogue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Tanfana/Llv 1/Dialogue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Tanfana/Lvl 0/Dialogue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Tanfana/Lvl 0/Dialogue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Tanfana/Lvl 2/Dialogue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Dialogue/Tanfana/Lvl 2/Dialogue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventBus/FetchQuestControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventBus/FetchQuestControler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +135,7 @@
       <workItem from="1781598652880" duration="4893000" />
       <workItem from="1781690715953" duration="2582000" />
       <workItem from="1781716514805" duration="2814000" />
-      <workItem from="1781771563485" duration="11706000" />
+      <workItem from="1781771563485" duration="20642000" />
     </task>
     <servers />
   </component>

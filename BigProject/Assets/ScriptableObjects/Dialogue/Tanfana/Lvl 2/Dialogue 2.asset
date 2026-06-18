@@ -10,27 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f2eb0c4a1834594b9eb986c81e878ac, type: 3}
-  m_Name: Dialogue
+  m_Name: Dialogue 2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   id: 
   currentLine: 0
   lines:
   - character: Player
-    text: Are you Tanfana?
+    text: Did the stone truly fall from the sky?
   - character: Tanfana
-    text: "That\u2019s what people used to call me."
+    text: "That\u2019s what people believed."
   - character: Player
-    text: Used to?
+    text: Did people worship it?
   - character: Tanfana
-    text: "It\u2019s been a long time since anyone asked."
+    text: Not exactly.
   conditions: []
   choices:
-  - text: 'Are you really the Tanfana from the stories? '
-    nextNode: {fileID: 11400000, guid: a5da0352c48e7ed4280374458f18ae42, type: 2}
+  - text: Then why was it important?
+    nextNode: {fileID: 11400000, guid: b8f440b6d4ca833448921142923749a1, type: 2}
     conditions: []
-  - text: "You\u2019re just a local legend."
-    nextNode: {fileID: 11400000, guid: 20c5db7525c73f945879bc3f89e921ad, type: 2}
+  - text: What kind of power did it have?
+    nextNode: {fileID: 11400000, guid: 9f7c4ef30713e294c81abf45f2f70f2e, type: 2}
     conditions: []
-  - text: Can I help you?
-    nextNode: {fileID: 11400000, guid: 75a0d019fbba53045841f868216492d4, type: 2}
+  - text: Is it true people felt something when they touched it?
+    nextNode: {fileID: 11400000, guid: da80b1cceab544b43828f8a0c080c7ca, type: 2}
     conditions: []

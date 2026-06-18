@@ -13,24 +13,35 @@ MonoBehaviour:
   m_Name: Historian
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   id: 
-  currentLine: 0
+  currentLine: 3
   lines:
   - character: Player
-    text: "Excuse me, I\u2019m looking for information about a stone that was connected
-      to Tanfana\u2019s sacred place."
+    text: "Excuse me, I\u2019m looking for information about a stone"
+  - character: Player
+    text: " that was connected to Tanfana\u2019s sacred place."
   - character: Historian
-    text: You mean the stone in the centre of the village? Most people walk past
-      it every day without thinking about it.
+    text: 'You mean the stone in the centre of the village? '
+  - character: Historian
+    text: Most people walk past it every day without thinking about it.
   - character: Player
     text: "That\u2019s the same stone?"
   - character: Historian
-    text: People believed it had fallen from the heavens, Some claimed it brought
-      visions, others said they could hear voices when standing near it.
+    text: 'People believed it had fallen from the heavens. '
+  - character: Historian
+    text: Some claimed it brought visions,
+  - character: Historian
+    text: others said they could hear voices when standing near it.
   - character: Player
     text: Is there any proof of that?
   - character: Historian
-    text: Proof? No. Records? Maybe. We keep some old documents in the village archives.
-      If you want to know more, you should start there.
+    text: 'Proof? No. Records? Maybe. '
+  - character: Historian
+    text: 'We keep some old documents in the village archives. '
+  - character: Historian
+    text: If you want to know more, you should start there.
   conditions: []
   conditionNotMetNode: {fileID: 0}
   choices: []
+  events:
+  - {fileID: 11400000, guid: 0439a4bd87576fa41ad3f8073e34a7f9, type: 2}
+  - {fileID: 11400000, guid: 5ff5988357f4d764283ee565f1743f2e, type: 2}

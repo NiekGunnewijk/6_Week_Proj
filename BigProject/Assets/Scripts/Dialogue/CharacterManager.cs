@@ -10,6 +10,7 @@ public class CharacterManager : MonoBehaviour, IInteractable
     public CharacterData characterData;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private CharacterMovement characterMovement;
+    [SerializeField] private bool canMove;
 
     private void Start()
     {
@@ -27,8 +28,11 @@ public class CharacterManager : MonoBehaviour, IInteractable
 
     private void ActivateAgent(DialogueEndEvent dialogueEndEvent)
     {
-        agent.enabled = true;
-        characterMovement.enabled = true;
+        if (canMove)
+        {
+            agent.enabled = true;
+            characterMovement.enabled = true;
+        }
     }
 
     private void OnEnable()
