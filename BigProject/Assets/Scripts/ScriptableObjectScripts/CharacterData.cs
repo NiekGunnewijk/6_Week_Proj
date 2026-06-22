@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "CharacterData", menuName = "Scriptable Objects/CharacterData")]
@@ -8,7 +9,7 @@ public class CharacterData : ScriptableObject
     public string characterName;
     public int friendshipLevel;
     public StoryNode mainStory;
-    public StoryNode[] storyNodes;
+    public List<StoryNode> storyNodes;
     public DialogueNode[] dialogouNodes;
     public DialogueNode currentDialogueNode;
     public int currentDialogue;
@@ -19,6 +20,7 @@ public class CharacterData : ScriptableObject
         {
             currentDialogueNode = dialogouNodes[0];
         }
+        storyNodes = null;
         friendshipLevel = 0;
     }
 }

@@ -9,7 +9,7 @@ namespace EventBus
     /// </summary>
     public class FetchQuestController : QuestController
     {
-        public FetchQuest fetchQuest;
+        private FetchQuest fetchQuest;
         // Start is called before the first frame update
         void Start()
         {
